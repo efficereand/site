@@ -204,18 +204,22 @@ button:hover {
 }
 
 .slideshow {
-  width: 450px;
+  width: 50%;
+  max-width: 600px;
   height: 300px;
   overflow: hidden;
   border-radius: 20px;
   margin: 10px;
   justify-content: right;
+  object-fit: cover;
 }
 
 .slide {
   width: 100%;
   height: 100%;
   display: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 .slide.active {
@@ -225,7 +229,8 @@ button:hover {
 #home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #home .texto_home h2 strong {
@@ -234,7 +239,6 @@ button:hover {
 
 .texto_home{
   width: 550px;
-  height: 300px;
 }
 
 #btn_contato_home {
