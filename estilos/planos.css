@@ -39,6 +39,13 @@ nav {
   font-weight: bold;
 }
 
+.menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
 main {
   padding: 40px auto;
   margin: 40px 0px;
@@ -78,76 +85,22 @@ h2 {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .portfolio-grid {
     flex-wrap: wrap;
   }
 
-  .comparison-table {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0px auto;
+  .table-cell, #table-cell-text, .table-cell-servico  {
+    font-size: 10px;
   }
-  
-  .table-row {
-    display: table-row;
-  }
-  
-  .table-row-compre {
-    display: table-row;
-  }
-  
-  .table-cell {
-    display: table-cell;
-    border: 1px solid #ccc;
-    padding: 0px;
-    width: 0px;
-  }
-  
-  .table-cell-servico {
-    display: table-cell;
-    border: 1px solid #ccc;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .table-cell-valor {
-    display: table-cell;
-    border: 1px solid #ccc;
-    padding: 0px;
-    text-align: center;
-  }
-  
+
   .table-cell-compre {
-    display: table-cell;
-  
-    text-align: center;
+    font-size: 12px;
   }
-  
-  .table-cell:first-child {
-    font-weight: bold;
-  }
-  
-  /* Estilos específicos para a primeira linha (cabeçalho) */
-  .table-row:first-child {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  /* Estilize a célula "x" como desejado */
-  .table-cell {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  #table-cell-text {
-    text-align: left;
-    padding-left: 0px;
-    justify-content: center;
-    align-items: center;
-  }
+}
+
+.table-row-compre {
+  display: table-row;
 }
 
 .portfolio-item {
@@ -160,11 +113,6 @@ h2 {
   max-width: 100px;
   height: auto;
   margin-bottom: 10px;
-}
-
-#plano_exclusivo {
-  display: flex;
-  justify-content: center;
 }
 
 .elegant-background {
@@ -227,6 +175,13 @@ footer {
   color: #fff;
 }
 
+.footer-menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
 .direitos {
   display: flex;
   justify-content: center;
@@ -277,6 +232,7 @@ footer {
   padding: 7px 2px;
   border-radius: 5px;
   text-decoration: none;
+
 }
 
 #btn_contato_compre:hover {
@@ -298,25 +254,6 @@ button:hover {
   background-color: #000;
 }
 
-.slideshow {
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 20px;
-  margin: 10px;
-  justify-content: right;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
 #home {
   display: flex;
   flex-wrap: wrap;
@@ -327,7 +264,7 @@ button:hover {
   color: #0074FF;
 }
 
-.texto_home{
+.texto_home {
   width: 550px;
   height: 300px;
 }
@@ -351,15 +288,10 @@ button:hover {
   display: table-row;
 }
 
-.table-row-compre {
-  display: table-row;
-}
-
 .table-cell {
   display: table-cell;
   border: 1px solid #ccc;
   padding: 10px 2px;
-  width: 50px;
 }
 
 .table-cell-servico {
@@ -379,7 +311,6 @@ button:hover {
 
 .table-cell-compre {
   display: table-cell;
-
   text-align: center;
 }
 
@@ -409,4 +340,15 @@ button:hover {
   padding-left: 10px;
   justify-content: center;
   align-items: center;
+
+}
+
+.obs_planos {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.obs_planos>p>strong {
+  color: red;
 }

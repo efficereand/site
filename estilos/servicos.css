@@ -39,6 +39,13 @@ nav {
   font-weight: bold;
 }
 
+.menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
 main {
   padding: 40px auto;
   margin: 40px 0px;
@@ -159,6 +166,13 @@ footer {
 .footer-menu li a {
   text-decoration: none;
   color: #fff;
+}
+
+.footer-menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
 }
 
 .direitos {
@@ -343,4 +357,14 @@ button:hover {
   padding-left: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.obs_planos {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.obs_planos>p>strong {
+  color: red;
 }

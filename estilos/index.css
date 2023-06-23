@@ -8,6 +8,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
+body p {
+  text-indent: 20px; /* recua a primeira linha em 20 pixels */
+  text-align: justify;
+  padding: 2px 0px 2px 0px;
+}
+
 header {
   background-color: #333;
   padding: 20px;
@@ -37,6 +43,13 @@ nav {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
 }
 
 main {
@@ -80,6 +93,14 @@ h2 {
 @media screen and (max-width: 768px) {
   .portfolio-grid {
     flex-wrap: wrap;
+  }
+  
+  #botao_contato_home {
+    display: none;
+  }
+
+  .menu>li>a {
+    font-size: 14px;
   }
 }
 
@@ -160,6 +181,13 @@ footer {
   color: #fff;
 }
 
+.footer-menu>li>a:hover {
+  padding: 5px;
+  background-color: #888888;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
 .direitos {
   display: flex;
   justify-content: center;
@@ -237,6 +265,37 @@ button:hover {
   display: block;
 }
 
+#separacao_clientes {
+  text-align: center;
+}
+
+#clientes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slideshow_clientes {
+  width: 551px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: right;
+  border: #333 solid 1px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.slide_cliente {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide_cliente.active {
+  display: block;
+}
+
 #home {
   display: flex;
   flex-wrap: wrap;
@@ -253,9 +312,87 @@ button:hover {
 }
 
 #btn_contato_home {
-  margin: 10px 0px;
+  margin: 10px 0px 50px 0px;
+}
+
+#botao_contato_home{
+  margin: 0px 0px 100px 0px;
 }
 
 .div_serv_personalizado {
   color: #0074FF;
+}
+
+.texto_clientes {
+  width: 550px;
+
+}
+
+
+
+
+
+
+
+.dark {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+
+h1.center {
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.logo-carousel {
+  display: flex;
+  animation: carousel-slide 10s infinite;
+}
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0);
+  }
+  16.666% {
+    transform: translateX(-15%);
+  }
+  33.333% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(-45%);
+  }
+  66.666% {
+    transform: translateX(-60%);
+  }
+  83.333% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+.logo-slide {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.logo-image {
+  height: 75px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.logo-image:hover {
+  filter: none;
 }
